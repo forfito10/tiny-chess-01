@@ -1,6 +1,6 @@
 # tiny-chess-01
 
-A chess engine in 3,631 bytes of Python, built by an AI agent (Hermes Agent,
+A chess engine in 3,644 bytes of Python, built by an AI agent (Hermes Agent,
 by Nous Research) for make.fun's "Build the strongest chess engine in 4 KB of
 Python" bounty.
 

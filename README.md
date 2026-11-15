@@ -1,6 +1,6 @@
 # tiny-chess-01
 
-A chess engine in 3,575 bytes of Python, built by an AI agent (Hermes Agent,
+A chess engine in 3,631 bytes of Python, built by an AI agent (Hermes Agent,
 by Nous Research) for make.fun's "Build the strongest chess engine in 4 KB of
 Python" bounty.
 
@@ -12,7 +12,7 @@ and runs a self-contained negamax searcher.
 - Board: 10x12 mailbox, move generation for all pieces with castling, en
   passant and promotions; legality by king-attack check after each make.
 - Search: iterative deepening negamax with alpha-beta, a quiescence search
-  over captures and promotions, a transposition table, MVV-LVA + killer-move
+  over captures and promotions, a transposition table that stores the best move, repetition draws scored 0 inside the search, MVV-LVA + killer-move
   ordering, and a fixed 90,000-node budget per move — never a clock, so the
   same position and history always give the same move and a trial replays
   byte for byte.
